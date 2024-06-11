@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="staff.css" />
+    <title>staff</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="img">
+        <img
+          class="imgm"
+          src="images/logo.png"
+          alt="image"
+          width="70px"
+          height="70px"
+        />
+      </div>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#Programmes">Programmes</a></li>
+             <li><a href="#Leçons">Leçons</a></li>
+             <li><a href="#Staff">Staff</a></li>
+             <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="photos">
+      <span style="--i: 1">
+        <img src="images/tennis2.png" alt="" />
+      </span>
+      <span style="--i: 2">
+        <img src="images/terre1 (2).jpg" alt="" />
+      </span>
+      <span style="--i: 3">
+        <img src="images/terre3.jpg" alt="" />
+      </span>
+      <span style="--i: 4">
+        <img src="images/images4.jpg" alt="" />
+      </span>
+    </div>
+    <script type="text/javascript">
+      let box = document.querySelector(".photos");
+      window.onmousemove = function (e) {
+        let x = e.clientX / 3;
+        box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+      };
+    </script>
+  </body>
+</html>

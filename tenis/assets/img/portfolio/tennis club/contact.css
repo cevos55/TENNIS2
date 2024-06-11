@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+.contact {
+  width: 400px;
+  background: #000000e6;
+  color: #ffffff;
+  font-family: "montserrat";
+  box-shadow: 0 15px 25px #00000099;
+  padding: 40px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 120px;
+}
+body {
+  background: url("images/imagesrc3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.forms {
+  position: relative;
+}
+input {
+  width: 100%;
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+label {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+input:focus ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+form a {
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-top: 40px;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+
+a:hover {
+  background: #1c9538;
+  color: #272727;
+  border-radius: 5px;
+}
+a span {
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1c9538);
+  animation: anim-1 1.5s linear infinite;
+}
+@keyframes anim-1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1c9538);
+  animation: anim-2 1.5s linear infinite;
+  animation-delay: 0.375s;
+}
+@keyframes anim-2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #1c9538);
+  animation: anim-3 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes anim-3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #1c9538);
+  animation: anim-4 1.5s linear infinite;
+  animation-delay: 1.125s;
+}
+@keyframes anim-4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.menu {
+  margin-top: -8px;
+  height: 82px;
+  background: #1c9538;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  left: 0px;
+  top: 8px;
+}
+.top-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav ul li {
+  margin-right: 20px;
+}
+
+.top-nav ul li a:hover {
+  color: #27ca34;
+}
+.top-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.imgm {
+  margin-bottom: 2px;
+  margin-right: 659px;
+  margin-top: 2px;
+}
