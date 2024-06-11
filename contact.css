@@ -12,7 +12,7 @@
   margin-top: 120px;
 }
 body {
-  background-image: url("imagesrc3.jpg");
+  background-image: url("assets/img/images/imagesrc3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,7 +70,7 @@ form a {
 }
 
 a:hover {
-  background: #1c9538;
+  /* background: #1c9538; */
   color: #272727;
   border-radius: 5px;
 }
@@ -171,7 +171,6 @@ a span:nth-child(4) {
 }
 
 .top-nav ul li {
-  
   margin-right: 20px;
 }
 
